@@ -1,0 +1,571 @@
+/* =========================================
+   EVENTHUB — PREMIUM PEACH LANDING PAGE
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #fff5f0;
+  color: #171312;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.eventhub-navbar {
+  width: 100%;
+  padding: 18px 7%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 253, 251, 0.96);
+
+  border-bottom: 1px solid #ead7d0;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  backdrop-filter: blur(14px);
+}
+
+.eventhub-logo {
+  font-size: 26px;
+  font-weight: 850;
+  letter-spacing: -0.8px;
+  color: #713528;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-login,
+.nav-register {
+  padding: 11px 21px;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: all 0.25s ease;
+}
+
+.nav-login {
+  background: #fffdfb;
+  border: 1px solid #713528;
+  color: #713528;
+}
+
+.nav-login:hover {
+  background: #fff0e9;
+  transform: translateY(-2px);
+}
+
+.nav-register {
+  background: #713528;
+  border: 1px solid #713528;
+  color: #ffffff;
+
+  box-shadow: 0 7px 18px rgba(113, 53, 40, 0.20);
+}
+
+.nav-register:hover {
+  background: #5a281f;
+  transform: translateY(-2px);
+
+  box-shadow: 0 11px 25px rgba(113, 53, 40, 0.28);
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero-section {
+  min-height: 570px;
+
+  padding: 90px 7%;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(246, 199, 182, 0.65),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 90%,
+      rgba(246, 199, 182, 0.35),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #fffaf7 0%,
+      #fff0e9 52%,
+      #f8ddd2 100%
+    );
+
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  right: 8%;
+  top: 12%;
+
+  filter: blur(2px);
+}
+
+.hero-content {
+  max-width: 760px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-tag {
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  border: 1px solid #e8c9be;
+
+  color: #713528;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+
+  font-size: 12px;
+
+  box-shadow: 0 5px 18px rgba(113, 53, 40, 0.07);
+}
+
+.hero-title {
+  font-size: 60px;
+  line-height: 1.05;
+
+  margin: 20px 0 18px;
+
+  color: #171312;
+
+  letter-spacing: -2.5px;
+
+  max-width: 750px;
+}
+
+.hero-description {
+  max-width: 620px;
+
+  font-size: 18px;
+  line-height: 1.75;
+
+  color: #625a57;
+
+  margin-bottom: 0;
+}
+
+.primary-button {
+  margin-top: 26px;
+
+  padding: 15px 30px;
+
+  border: none;
+  border-radius: 11px;
+
+  background: linear-gradient(
+    135deg,
+    #713528,
+    #5a281f
+  );
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 25px rgba(113, 53, 40, 0.22);
+
+  transition: all 0.25s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 32px rgba(113, 53, 40, 0.30);
+}
+
+/* =========================================
+   CATEGORIES
+========================================= */
+
+.categories-section {
+  padding: 75px 7%;
+
+  text-align: center;
+
+  background: #fffdfb;
+}
+
+.section-title {
+  font-size: 33px;
+
+  margin: 0 0 38px;
+
+  color: #171312;
+
+  letter-spacing: -0.8px;
+}
+
+.category-container {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 14px;
+}
+
+.category-button {
+  padding: 13px 21px;
+
+  border: 1px solid #ead7d0;
+
+  background: #fff6f1;
+
+  color: #171312;
+
+  border-radius: 11px;
+
+  font-size: 15px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.category-button:hover {
+  background: #f6c7b6;
+
+  border-color: #d9a99a;
+
+  color: #5a281f;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(113, 53, 40, 0.10);
+}
+
+/* =========================================
+   EVENTS
+========================================= */
+
+.events-section {
+  padding: 75px 7%;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff8f5,
+      #fff1eb
+    );
+}
+
+.event-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.event-card {
+  background: #fffdfb;
+
+  border-radius: 18px;
+
+  padding: 26px;
+
+  border: 1px solid #ead7d0;
+
+  box-shadow:
+    0 8px 25px rgba(113, 53, 40, 0.07);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #dfb9aa;
+
+  box-shadow:
+    0 17px 38px rgba(113, 53, 40, 0.13);
+}
+
+.event-card h3 {
+  margin-top: 0;
+
+  margin-bottom: 12px;
+
+  font-size: 21px;
+
+  color: #171312;
+}
+
+.event-card p {
+  color: #625a57;
+
+  line-height: 1.65;
+}
+
+.event-button {
+  margin-top: 10px;
+
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #713528;
+
+  color: #ffffff;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.event-button:hover {
+  background: #5a281f;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.cta-section {
+  margin: 45px 7% 75px;
+
+  padding: 65px 30px;
+
+  text-align: center;
+
+  border-radius: 24px;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(246, 199, 182, 0.30),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #713528,
+      #5a281f
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 18px 45px rgba(113, 53, 40, 0.20);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.cta-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  right: -70px;
+  top: -80px;
+}
+
+.cta-section h2 {
+  position: relative;
+  z-index: 2;
+
+  font-size: 34px;
+
+  margin-bottom: 10px;
+
+  color: #ffffff;
+}
+
+.cta-section p {
+  position: relative;
+  z-index: 2;
+
+  opacity: 0.88;
+
+  font-size: 17px;
+
+  color: #ffffff;
+}
+
+.cta-button {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 17px;
+
+  padding: 13px 27px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #f6c7b6;
+
+  color: #171312;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.cta-button:hover {
+  background: #ffffff;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 9px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .event-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .event-container {
+    grid-template-columns: 1fr;
+  }
+
+  .eventhub-navbar {
+    padding: 15px 5%;
+  }
+
+  .hero-section,
+  .categories-section,
+  .events-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 550px) {
+  .eventhub-navbar {
+    padding: 14px 5%;
+  }
+
+  .eventhub-logo {
+    font-size: 22px;
+  }
+
+  .nav-buttons {
+    gap: 7px;
+  }
+
+  .nav-login,
+  .nav-register {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+
+  .hero-section {
+    min-height: 500px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .hero-title {
+    font-size: 37px;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .cta-section {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 50px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 28px;
+  }
+}

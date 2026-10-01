@@ -1,0 +1,329 @@
+/* =========================================
+   EVENTHUB — GLOBAL PEACH THEME
+========================================= */
+
+:root {
+  --peach: #f6c7b6;
+  --light-peach: #fff3ee;
+  --soft-peach: #fde5dc;
+
+  --dark-peach: #713528;
+  --deep-peach: #5a281f;
+
+  --black: #171312;
+  --gray: #625a57;
+  --muted: #817672;
+
+  --white: #fffdfb;
+  --border: #ead7d0;
+
+  --shadow: 0 12px 35px rgba(113, 53, 40, 0.10);
+  --shadow-hover: 0 18px 45px rgba(113, 53, 40, 0.17);
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: var(--black);
+  background: var(--light-peach);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(246, 199, 182, 0.45),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #fff7f3 0%,
+      #fff3ee 50%,
+      #fbe8e0 100%
+    );
+
+  color: var(--black);
+  font-family: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  color: var(--black);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9b8d88;
+}
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+p {
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+/* =========================================
+   COMMON BUTTON STYLE
+========================================= */
+
+button {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Primary dark peach button */
+
+.primary-btn,
+.primary-button,
+.cta-button,
+.create-event-btn {
+  background: linear-gradient(
+    135deg,
+    var(--dark-peach),
+    var(--deep-peach)
+  );
+
+  color: white;
+
+  border-radius: 12px;
+  padding: 12px 20px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 20px rgba(113, 53, 40, 0.20);
+}
+
+.primary-btn:hover,
+.primary-button:hover,
+.cta-button:hover,
+.create-event-btn:hover {
+  box-shadow:
+    0 12px 28px rgba(113, 53, 40, 0.28);
+}
+
+/* Secondary button */
+
+.secondary-btn,
+.secondary-button {
+  background: var(--white);
+  color: var(--dark-peach);
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+  padding: 11px 19px;
+
+  font-weight: 700;
+}
+
+.secondary-btn:hover,
+.secondary-button:hover {
+  background: var(--soft-peach);
+}
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.card {
+  background: rgba(255, 253, 251, 0.92);
+
+  border: 1px solid var(--border);
+
+  border-radius: 20px;
+
+  box-shadow: var(--shadow);
+
+  backdrop-filter: blur(12px);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+input,
+textarea,
+select {
+  background: var(--white);
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--dark-peach);
+
+  box-shadow:
+    0 0 0 4px rgba(154, 79, 61, 0.10);
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+  color: var(--dark-peach);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--deep-peach);
+}
+
+/* =========================================
+   SELECTION
+========================================= */
+
+::selection {
+  background: var(--peach);
+  color: var(--black);
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff0ea;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c88c79;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-peach);
+}
+
+/* =========================================
+   COMMON PAGE BACKGROUND
+========================================= */
+
+.page,
+.app-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 10% 0%,
+      rgba(246, 199, 182, 0.35),
+      transparent 30%
+    ),
+    var(--light-peach);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

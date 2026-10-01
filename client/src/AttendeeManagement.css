@@ -1,0 +1,393 @@
+.attendee-page {
+  min-height: 100vh;
+  background: #f5f2ef;
+  color: #2d211d;
+  padding: 40px 6%;
+  font-family: Arial, sans-serif;
+}
+
+.attendee-header {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+}
+
+.attendee-back-link {
+  border: none;
+  background: transparent;
+  color: #713528;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.attendee-heading {
+  max-width: 700px;
+}
+
+.attendee-eyebrow {
+  display: inline-block;
+  color: #a85f46;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.attendee-heading h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 0.95;
+  letter-spacing: -3px;
+  color: #351f1a;
+}
+
+.attendee-heading p {
+  margin: 22px 0 0;
+  color: #756b67;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* EVENT CARD */
+
+.attendee-event-card {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+  background: #fffdfb;
+  border: 1px solid #e6ddd7;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.attendee-event-info {
+  min-width: 0;
+}
+
+.attendee-category {
+  display: inline-block;
+  color: #713528;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.attendee-event-info h2 {
+  margin: 0 0 15px;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  color: #351f1a;
+}
+
+.attendee-event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #756b67;
+  font-size: 14px;
+}
+
+.attendee-count-box {
+  min-width: 145px;
+  padding: 22px;
+  background: #713528;
+  color: white;
+  text-align: center;
+}
+
+.attendee-count-box strong {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.attendee-count-box span {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* LIST */
+
+.attendee-list-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.attendee-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 18px;
+}
+
+.attendee-list-header span {
+  color: #a85f46;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.attendee-list-header h2 {
+  margin: 7px 0 0;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  color: #351f1a;
+}
+
+.attendee-refresh {
+  border: 1px solid #d9cec7;
+  background: #fffdfb;
+  color: #713528;
+  padding: 11px 17px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.attendee-refresh:hover {
+  background: #713528;
+  color: white;
+}
+
+/* ROW */
+
+.attendee-list {
+  background: #fffdfb;
+  border: 1px solid #e6ddd7;
+}
+
+.attendee-row {
+  min-height: 86px;
+  padding: 17px 24px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  border-bottom: 1px solid #eee6e1;
+}
+
+.attendee-row:last-child {
+  border-bottom: none;
+}
+
+.attendee-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e8d4ca;
+  color: #713528;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.attendee-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.attendee-user-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.attendee-user-info h3 {
+  margin: 0 0 5px;
+  color: #35231f;
+  font-size: 16px;
+}
+
+.attendee-user-info p {
+  margin: 0;
+  color: #817671;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attendee-number {
+  color: #b6aaa4;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* EMPTY */
+
+.attendee-no-data {
+  background: #fffdfb;
+  border: 1px solid #e6ddd7;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.no-data-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #f0e4de;
+  color: #713528;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.attendee-no-data h3 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 26px;
+}
+
+.attendee-no-data p {
+  margin: 10px 0 0;
+  color: #817671;
+}
+
+/* ERROR */
+
+.attendee-message {
+  max-width: 1200px;
+  margin: 0 auto 25px;
+  padding: 14px 18px;
+  background: #f8e8e4;
+  border: 1px solid #e0bbb2;
+  color: #8a382b;
+  font-size: 14px;
+}
+
+/* LOADING */
+
+.attendee-loading {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.attendee-loader {
+  width: 42px;
+  height: 42px;
+  border: 3px solid #e2d5cf;
+  border-top-color: #713528;
+  border-radius: 50%;
+  animation: attendee-spin 0.8s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes attendee-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.attendee-loading h3 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 25px;
+}
+
+.attendee-loading p {
+  color: #817671;
+}
+
+.attendee-empty {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.attendee-empty-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #eadbd4;
+  color: #713528;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.attendee-empty h2 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.attendee-empty p {
+  color: #817671;
+  margin: 10px 0 25px;
+}
+
+.attendee-back-btn {
+  border: none;
+  background: #713528;
+  color: white;
+  padding: 13px 20px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .attendee-page {
+    padding: 28px 18px;
+  }
+
+  .attendee-heading h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .attendee-event-card {
+    padding: 22px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .attendee-event-info h2 {
+    font-size: 28px;
+  }
+
+  .attendee-count-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .attendee-list-header {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .attendee-row {
+    padding: 15px;
+  }
+
+  .attendee-number {
+    display: none;
+  }
+}

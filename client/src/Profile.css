@@ -1,0 +1,605 @@
+
+.profile-page {
+  min-height: 100vh;
+  background: #f7f1ea;
+  color: #2d211c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.profile-header {
+  min-height: 88px;
+  padding: 18px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #dfd3c7;
+  background: rgba(255, 253, 250, 0.96);
+}
+
+.profile-back-button,
+.profile-logout-button,
+.profile-edit-button,
+.profile-primary-button,
+.profile-cancel-button {
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.profile-back-button {
+  background: transparent;
+  color: #68402f;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.profile-back-button:hover {
+  color: #3f241a;
+}
+
+.profile-header-title {
+  text-align: center;
+}
+
+.profile-header-title span {
+  display: block;
+  color: #8b6755;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.profile-header-title h1 {
+  margin: 5px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+}
+
+.profile-logout-button {
+  padding: 11px 18px;
+  border: 1px solid #cdbeb1;
+  border-radius: 999px;
+  background: #fffdfb;
+  color: #6b3829;
+  font-weight: 700;
+}
+
+.profile-logout-button:hover {
+  background: #eee3d9;
+}
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.profile-main {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+  padding: 55px 0 80px;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.profile-hero {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 30px;
+
+  padding: 38px;
+
+  background: #fffdfb;
+  border: 1px solid #dfd3c7;
+  border-radius: 24px;
+}
+
+.profile-avatar-large {
+  width: 118px;
+  height: 118px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  background: #7b4935;
+  color: #fffaf6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+.profile-avatar-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-hero-info {
+  min-width: 0;
+}
+
+.profile-eyebrow,
+.profile-section-heading span {
+  color: #99725e;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.profile-hero-info h2 {
+  margin: 8px 0 4px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 38px;
+}
+
+.profile-hero-info p {
+  margin: 0 0 8px;
+  color: #765f52;
+  font-size: 15px;
+}
+
+.profile-member {
+  color: #a18b7e;
+  font-size: 12px;
+}
+
+/* =====================================================
+   EDIT PROFILE BUTTON
+===================================================== */
+
+.profile-edit-button {
+  position: relative;
+  z-index: 10;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 46px;
+  padding: 13px 20px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #713528;
+  color: #ffffff;
+
+  font-weight: 700;
+  font-size: 14px;
+
+  cursor: pointer;
+  pointer-events: auto;
+
+  user-select: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.profile-edit-button:hover {
+  background: #54271e;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(84, 39, 30, 0.16);
+}
+
+.profile-edit-button:active {
+  transform: translateY(0);
+}
+
+.profile-edit-button:focus-visible {
+  outline: 3px solid rgba(113, 53, 40, 0.25);
+  outline-offset: 3px;
+}
+
+/* =====================================================
+   MESSAGES
+===================================================== */
+
+.profile-success-message,
+.profile-error-message {
+  margin-top: 22px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profile-success-message {
+  background: #e9f3e9;
+  color: #315b36;
+  border: 1px solid #c9dfca;
+}
+
+.profile-error-message {
+  background: #f7e8e4;
+  color: #783d31;
+  border: 1px solid #e3c4bd;
+}
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.profile-stat-card {
+  padding: 26px;
+  background: #fffdfb;
+  border: 1px solid #dfd3c7;
+  border-radius: 18px;
+}
+
+.profile-stat-card span {
+  display: block;
+  color: #99725e;
+  font-size: 10px;
+  letter-spacing: 1.7px;
+  font-weight: 800;
+}
+
+.profile-stat-card strong {
+  display: block;
+  margin-top: 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+}
+
+.profile-stat-card p {
+  margin: 4px 0 0;
+  color: #806d61;
+  font-size: 13px;
+}
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.profile-edit-section,
+.profile-overview {
+  margin-top: 22px;
+  padding: 34px;
+
+  background: #fffdfb;
+  border: 1px solid #dfd3c7;
+  border-radius: 20px;
+}
+
+.profile-section-heading h2 {
+  margin: 8px 0 5px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+}
+
+.profile-section-heading p {
+  margin: 0;
+  color: #806d61;
+}
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.profile-form {
+  margin-top: 28px;
+}
+
+.profile-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.profile-field {
+  margin-bottom: 20px;
+}
+
+.profile-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #50362a;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.profile-field input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px 15px;
+
+  border: 1px solid #d8cabe;
+  border-radius: 12px;
+
+  outline: none;
+
+  background: #fff;
+  color: #33251f;
+
+  font-size: 14px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.profile-field input:focus {
+  border-color: #8b4d38;
+  box-shadow: 0 0 0 3px rgba(139, 77, 56, 0.1);
+}
+
+.profile-field small {
+  display: block;
+  margin-top: 7px;
+  color: #9a877b;
+  font-size: 11px;
+}
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.profile-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.profile-cancel-button {
+  padding: 13px 20px;
+
+  border: 1px solid #d5c7bb;
+  border-radius: 999px;
+
+  background: transparent;
+  color: #63483a;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.profile-cancel-button:hover {
+  background: #eee3d9;
+}
+
+.profile-primary-button {
+  padding: 13px 22px;
+
+  border-radius: 999px;
+
+  background: #713528;
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.profile-primary-button:hover {
+  background: #54271e;
+}
+
+.profile-primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =====================================================
+   OVERVIEW
+===================================================== */
+
+.profile-info-list {
+  margin-top: 25px;
+}
+
+.profile-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+  padding: 18px 0;
+
+  border-bottom: 1px solid #eadfd7;
+}
+
+.profile-info-row:last-child {
+  border-bottom: none;
+}
+
+.profile-info-row span {
+  color: #947d70;
+  font-size: 13px;
+}
+
+.profile-info-row strong {
+  color: #3c2921;
+  font-size: 14px;
+  text-align: right;
+  word-break: break-word;
+}
+
+/* =====================================================
+   LOADING / ERROR
+===================================================== */
+
+.profile-loading,
+.profile-error {
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 30px;
+}
+
+.profile-loader {
+  width: 38px;
+  height: 38px;
+
+  border: 3px solid #dfd3c7;
+  border-top-color: #713528;
+
+  border-radius: 50%;
+
+  animation: profileSpin 0.8s linear infinite;
+
+  margin-bottom: 20px;
+}
+
+@keyframes profileSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-loading h2,
+.profile-error h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.profile-loading p,
+.profile-error p {
+  color: #806d61;
+}
+
+.profile-error-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0ddd8;
+  color: #783d31;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  margin-bottom: 18px;
+}
+
+/* =====================================================
+   DASHBOARD PROFILE BUTTON
+===================================================== */
+
+.dashboard-profile {
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 800px) {
+  .profile-header {
+    padding: 16px 5%;
+  }
+
+  .profile-header-title h1 {
+    font-size: 22px;
+  }
+
+  .profile-main {
+    width: 92%;
+    padding-top: 30px;
+  }
+
+  .profile-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .profile-hero-info h2 {
+    font-size: 30px;
+  }
+
+  .profile-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .profile-primary-button,
+  .profile-cancel-button {
+    width: 100%;
+  }
+
+  .profile-edit-button {
+    width: auto;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 520px) {
+  .profile-header {
+    flex-wrap: wrap;
+  }
+
+  .profile-header-title {
+    order: -1;
+    width: 100%;
+  }
+
+  .profile-hero,
+  .profile-edit-section,
+  .profile-overview {
+    padding: 24px 20px;
+  }
+
+  .profile-info-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .profile-info-row strong {
+    text-align: left;
+  }
+
+  .profile-edit-button {
+    width: 100%;
+  }
+}
+

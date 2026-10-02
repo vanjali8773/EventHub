@@ -895,11 +895,7 @@ textarea {
   background: var(--poster-bg) !important;
   background-image: none !important;
 }
-className={
-  template === item.id
-    ? "template-card active"
-    : "template-card"
-}
+
 
 /* ===== EXTRA POSTER FILTERS ===== */
 
